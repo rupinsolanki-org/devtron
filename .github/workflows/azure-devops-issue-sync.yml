@@ -46,7 +46,7 @@ jobs:
         with:
           args: " ${{ github.event.issue.title }} ${{ github.event.issue.html_url }}"
   potential_duplicate_issue:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: wow-actions/potential-duplicates@v1
         with:
